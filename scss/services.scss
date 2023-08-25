@@ -1,0 +1,55 @@
+@import './mixins' ;
+@import './reset';
+@import './vars';
+body {
+    width: 100%;
+    background-color: #fff;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 53px 360px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 57px;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 31px;
+}
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: center;
+}
+.nav__link {
+    @include jost-small ($color-text,$jost,$fw-small);
+    text-align: center;
+    font-size: 20px;
+    line-height: 125%;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+.section1__bg-container {
+    width: 160%;
+    height: 356px;
+    margin-left: -360px;
+    background-image: url(../img/services-img/nofull-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section1__bg-textbox {
+    
+}
