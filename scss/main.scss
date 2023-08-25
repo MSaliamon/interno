@@ -467,3 +467,67 @@ body {
     line-height: 150%;
     letter-spacing: 0.22px;
 }
+.footer {
+    margin-top: 135px;
+    display: flex;
+    flex-direction: column;
+    gap: 134px;
+    justify-content: center;
+}
+.footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 101px;
+}
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-right: 2px solid #E5E5E5;
+}
+.footer__info-text {
+    @include jost-small ($color-text,$jost,$fw-small);
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.22px;
+    width: 60%;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 54px;
+}
+.footer__servises {
+    display: flex;
+    flex-direction: row;
+    gap: 101px;
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-right: 2px solid #E5E5E5;
+}
+.footer__title {
+    @include DM-Serif-Display ( $color-title, $dm-sans, $fw-small );
+    font-size: 25px;
+    line-height: 125%;
+}
+.footer__link {
+    @include jost-small ($color-text,$jost,$fw-small);
+    line-height: 300%;
+    letter-spacing: 0.22px;
+}
+.footer__last-container {
+    margin-top: 134px;
+}
+.footer__last-text {
+    @include jost-small ($color-text,$jost,$fw-small);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.22px;
+    
+}
