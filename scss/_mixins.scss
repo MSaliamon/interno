@@ -1,0 +1,25 @@
+@mixin DM-Serif-Display ( $color-title, $dm-sans, $fw-small ) {
+    color: $color-title;
+    font-family: $dm-sans;
+    font-weight: $fw-small;
+}
+@mixin jost-small ($color-text,$jost,$fw-small) {
+    color: $color-text;
+    font-family: $jost;
+    font-weight: $fw-small;
+}
+@mixin jost-big ($color-text, $jost,$fw-big) {
+    color: $color-text;
+    font-family: $jost;
+    font-weight: $fw-big;
+}
+@mixin jost-very-big-white ($white, $jost,$fw-very-big) {
+    color: $white;
+    font-family: $jost;
+    font-weight: $fw-very-big;
+}
+@mixin jost-very-big-dark ($color-text, $jost,$fw-very-big) {
+    color: $color-text;
+    font-family: $jost;
+    font-weight: $fw-very-big;
+}
