@@ -190,3 +190,41 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.section1__bg-textbox {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 41px 158px;
+  gap: 10px;
+  top: 330px;
+  left: 708px;
+  z-index: 1;
+  background-color: #FFF;
+  border-radius: 37px 37px 0px 0px;
+}
+
+.section1__bg-text {
+  color: #292F36;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 125%;
+}
+
+.section1__bg-text2 {
+  color: #4D5053;
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}

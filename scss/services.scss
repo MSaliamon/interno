@@ -51,5 +51,26 @@ body {
     background-size: cover;
 }
 .section1__bg-textbox {
-    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 41px 158px;
+    gap: 10px;
+    top: 330px;
+    left: 708px;
+    z-index: 1;
+    background-color: $white;
+    border-radius: 37px 37px 0px 0px;
+}
+.section1__bg-text {
+    @include DM-Serif-Display ( $color-title, $dm-sans, $fw-small );
+    font-size: 50px;
+    line-height: 125%; 
+}
+.section1__bg-text2 {
+    @include jost-small ($color-text,$jost,$fw-small);
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.22px;
 }
