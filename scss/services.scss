@@ -3,7 +3,7 @@
 @import './vars';
 body {
     width: 100%;
-    background-color: #fff;
+    background-color: $white;
 }
 .wrapper {
     display: flex;
@@ -36,11 +36,11 @@ body {
 .main {
     display: flex;
     flex-direction: column;
+    gap: 200px;
 }
 .section1 {
     display: flex;
     flex-direction: column;
-    gap: 200px;
 }
 .section1__bg-container {
     width: 160%;
@@ -73,4 +73,51 @@ body {
     font-size: 22px;
     line-height: 150%;
     letter-spacing: 0.22px;
+}
+.section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+}
+.section2__row-container {
+    display: flex;
+    flex-direction: row;
+}
+.section2__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section2__container:hover {
+    border-radius: 30px;
+    background: $bg-color;
+}
+.section2__title {
+    @include DM-Serif-Display ( $color-title, $dm-sans, $fw-small );
+    text-align: center;
+    font-size: 25px;
+    line-height: 125%;
+    margin-bottom: 20px;
+}
+.section2__text {
+    @include jost-small ($color-text,$jost,$fw-small);
+    text-align: center;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.22px;
+    width: 80%;
+    margin-bottom: 52px;
+}
+.section2__link-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.section2__link {
+    @include jost-big ($color-text, $jost,$fw-big);
+    text-align: center;
+    font-size: 18px;
+    line-height: 125%;
+    letter-spacing: 0.36px;
 }
