@@ -121,3 +121,13 @@ body {
     line-height: 125%;
     letter-spacing: 0.36px;
 }
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 70px;
+    background: #F4F0EC;
+}
+.section3-container {
+    padding: 160px 116px;
+}
