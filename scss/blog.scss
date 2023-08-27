@@ -47,7 +47,7 @@ body {
     width: 160%;
     height: 356px;
     margin-left: -360px;
-    background-image: url(../img/services-img/nofull-img.png);
+    background-image: url(../img/blog-img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -78,179 +78,139 @@ body {
 .section2 {
     display: flex;
     flex-direction: column;
-    gap: 88px;
+    gap: 172px;
 }
-.section2__row-container {
-    display: flex;
-    flex-direction: row;
-}
-.section2__container {
+.container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 30px;
 }
-.section2__container:hover {
-    border-radius: 30px;
-    background: $bg-color;
+.container__title {
+    @include DM-Serif-Display ( $color-title, $dm-sans, $fw-small );
+    font-size: 50px;
+    line-height: 125%;
+    letter-spacing: 1px;
+}
+.container__box {
+    display: flex;
+    flex-direction: row;
+    gap: 65px;
+    padding: 22px;
+    border: 1px solid #E7E7E7;
+    border-radius: 62px;
+}
+.container__img {
+    border-radius: 50px;
+}
+.container__text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 41px;
+    margin-top: 20px;
+}
+.container__contain-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    width: 75%;
+}
+.container__box-title {
+    @include DM-Serif-Display ( $color-title, $dm-sans, $fw-small );
+    font-size: 25px;
+    line-height: 125%;
+    letter-spacing: 0.5px;
+}
+.container__box-text {
+    @include jost-small ($color-text,$jost,$fw-small);
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.22px;
+}
+.section2__date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%
+}
+.section2__date-text {
+    @include jost-small ($color-text,$jost,$fw-small);
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.16px;
+}
+
+.section2__textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
 }
 .section2__title {
     @include DM-Serif-Display ( $color-title, $dm-sans, $fw-small );
     text-align: center;
-    font-size: 25px;
+    font-size: 50px;
     line-height: 125%;
-    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 .section2__text {
     @include jost-small ($color-text,$jost,$fw-small);
-    text-align: center;
     font-size: 22px;
     line-height: 150%;
     letter-spacing: 0.22px;
-    width: 80%;
-    margin-bottom: 52px;
-}
-.section2__link-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-}
-.section2__link {
-    @include jost-big ($color-text, $jost,$fw-big);
+    width: 63%;
     text-align: center;
-    font-size: 18px;
-    line-height: 125%;
-    letter-spacing: 0.36px;
 }
-.section3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 160px 116px;
-    border-radius: 70px;
-    background: $bg-color;
-}
-.section3-container {
-    display:  flex;
-    flex-direction: column;
-    gap: 100px;
-}
-.section3-container__text-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.section3-container__title {
-    @include DM-Serif-Display ( $color-title, $dm-sans, $fw-small );
-    color: #363B41;
-    text-align: center;
-    font-size: 50px;
-    line-height: 125%; 
-}
-.section3-container__text {
-    @include jost-small ($color-text,$jost,$fw-small);
-    display: flex;
-    text-align: center;
-    font-size: 22px;
-    line-height: 150%;
-    letter-spacing: 0.22px;
-    width: 75%;
-}
-.section3-container__content {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-}
-.section3-container__box {
+.section2__container {
     display: flex;
     flex-direction: row;
-    gap: 51px;
-}
-.section3-container__img {
-    border-radius: 0px 123px 0px 326.5px;
-}
-.section3-container__box-contain {
-    display: flex;
-    width: 456px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 58px;
-}
-.section3-container__box-svg {
-    display: flex;
-    flex-direction: row;
-    gap: 253px;
-}
-.section3-container__svg-text {
-    @include DM-Serif-Display ( $color-title, $dm-sans, $fw-small );
-    color: #FFF;
-    text-align: center;
-    font-size: 120px;
-    line-height: 125%;
-}
-.section3-container__box-text {
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
-}
-.section3-container__box-title {
-    @include DM-Serif-Display ( $color-title, $dm-sans, $fw-small );
-    font-size: 35px;
-    line-height: 125%;
-}
-.section3-container__box-text {
-    @include jost-small ($color-text,$jost,$fw-small);
-    font-size: 22px;
-    line-height: 150%;
-    letter-spacing: 0.22px;
-}
-.section4 {
-    display: flex;
-    padding: 80px 315px;
-    flex-direction: column;
+    gap: 27px;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 70px;
-    background: $color-title;
 }
-.section4__container {
+.section2__box {
     display: flex;
     flex-direction: column;
+    gap: 21px;
     align-items: center;
-    gap: 11px;
-    .btn--broun {
-        border-radius: 18px;
-        background: $number-color;
-        display: flex;
-        padding: 26px 49px;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 18px;
-        width: 55%;
-        @include jost-very-big-white ($white, $jost,$fw-very-big);
-        text-align: center;
-        font-size: 18px;
-        line-height: 125%;
-        letter-spacing: 0.36px;
+    border-radius: 62px;
+    border: 1px solid $grey;
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+    padding: 21px;
+}
+.section2__phone {
+    background-image: url(../img/index-img/news1.png);
+}
+.section2__img {
+    border-radius: 45px 45px 0px 0px;
+}
+.section2__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .title--width {
+        width: 100%;
     }
 }
-.section4__title {
+.section2__box-title {
     @include DM-Serif-Display ( $color-title, $dm-sans, $fw-small );
-    color: $white;
-    text-align: center;
-    font-size: 50px;
+    font-size: 25px;
     line-height: 125%;
+    letter-spacing: 0.5px;
+    width: 70%;
 }
-.section4__text {
+.section2__date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.section2__date-text {
     @include jost-small ($color-text,$jost,$fw-small);
-    color: $white;
-    text-align: center;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0.22px;
+    letter-spacing: 0.16px;
 }
 .footer {
     margin-top: 135px;
